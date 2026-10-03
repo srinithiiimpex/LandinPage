@@ -1,324 +1,1353 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0a1626" />
 
-  <title>Sri Nidhi Impex | Coming Soon</title>
-  <meta name="description" content="Sri Nidhi Impex is preparing to launch its official website. Connect with us soon for our business services and international enquiries.">
-  <meta name="theme-color" content="#071b3b">
+<!-- ============================================================
+     SEO
+     ============================================================ -->
+<meta name="description" content="Srinithii Impex builds high-performance websites, local SEO and 24/7 AI receptionist systems for home service contractors. Get a free quote today." />
+<meta name="keywords" content="contractor website design, local SEO for contractors, AI receptionist, plumber website, electrician marketing, HVAC leads, Srinithii Impex" />
+<meta name="author" content="Srinithii Impex" />
+<meta name="robots" content="index, follow" />
 
-  <style>
-    :root {
-      --navy: #071b3b;
-      --blue: #123c75;
-      --gold: #e5bd70;
-      --white: #ffffff;
-      --muted: #c5d0e0;
-    }
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231573ff'/%3E%3Cstop offset='1' stop-color='%234fd1ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-family='Arial,Helvetica,sans-serif' font-size='30' font-weight='900' fill='%23ffffff' text-anchor='middle'%3ESI%3C/text%3E%3C/svg%3E" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://srinithiiimpex.com/" />
+<meta property="og:title" content="Srinithii Impex | Websites, Local SEO &amp; 24/7 AI Reception for Contractors" />
+<meta property="og:description" content="High-performance websites, dominant local SEO and 24/7 AI receptionist systems for home service contractors. Get a free quote in 1 business day." />
+<meta property="og:image" content="https://srinithiiimpex.com/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Srinithii Impex" />
 
-    body {
-      min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--white);
-      background:
-        radial-gradient(ellipse at 15% 15%, #174478 0%, transparent 42%),
-        radial-gradient(ellipse at 90% 90%, #172d50 0%, transparent 45%),
-        var(--navy);
-      display: flex;
-      flex-direction: column;
-      overflow-x: hidden;
-    }
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://srinithiiimpex.com/" />
+<meta name="twitter:title" content="Srinithii Impex | Websites, Local SEO &amp; 24/7 AI Reception for Contractors" />
+<meta name="twitter:description" content="High-performance websites, dominant local SEO and 24/7 AI receptionist systems for home service contractors." />
+<meta name="twitter:image" content="https://srinithiiimpex.com/og-image.jpg" />
 
-    header {
-      width: 100%;
-      padding: 28px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
+<title>Srinithii Impex | Websites, Local SEO &amp; 24/7 AI Reception for Contractors</title>
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 13px;
-    }
+<style>
+/* ============================================================
+   THEME
+   ============================================================ */
+:root{
+  --slate:      #0a1626;
+  --slate-2:    #0f2138;
+  --slate-3:    #16304f;
+  --ice:        #dff1ff;
+  --ice-2:      #9fd4ff;
+  --white:      #ffffff;
+  --electric:   #1573ff;
+  --electric-2: #3f9bff;
+  --cyan:       #4fd1ff;
+  --muted:      #a9c2dd;
+  --line:       rgba(223,241,255,.14);
+  --shadow:     0 24px 70px rgba(0,0,0,.38);
+  --radius:     18px;
+}
 
-    .brand-mark {
-      width: 48px;
-      height: 48px;
-      border: 2px solid var(--gold);
-      color: var(--gold);
-      display: grid;
-      place-items: center;
-      font-size: 23px;
-      font-weight: 800;
-      border-radius: 10px 2px 10px 2px;
-    }
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:104px}
+body{
+  margin:0;background:var(--slate);color:var(--ice);line-height:1.65;overflow-x:hidden;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  position:relative;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-.03em;color:var(--white)}
+p{margin:0 0 14px}
+p:last-child{margin-bottom:0}
 
-    .brand-name {
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: 2px;
-    }
+.preloader{position:fixed;inset:0;z-index:9999;background:#081221;display:grid;place-items:center;transition:opacity .9s ease,visibility .9s ease}
+.preloader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.liquid-wrap{position:relative;width:150px;height:150px;display:grid;place-items:center}
+.liquid-blob{width:120px;height:120px;background:linear-gradient(135deg,#1573ff,#4fd1ff);box-shadow:0 0 60px rgba(21,115,255,.55);border-radius:60% 40% 30% 70% / 60% 30% 70% 40%;animation:liquid 4s ease-in-out infinite}
+.liquid-blob::after{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid rgba(79,209,255,.35);animation:liquidRing 2.2s ease-out infinite}
+@keyframes liquid{0%,100%{border-radius:60% 40% 30% 70% / 60% 30% 70% 40%;transform:rotate(0deg)}25%{border-radius:40% 60% 70% 30% / 50% 60% 30% 60%}50%{border-radius:30% 60% 70% 40% / 50% 40% 60% 50%;transform:rotate(180deg)}75%{border-radius:60% 40% 30% 70% / 60% 30% 70% 40%}}
+@keyframes liquidRing{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+.preloader-text{margin-top:22px;font-size:12px;letter-spacing:.24em;color:#9fd4ff;text-transform:uppercase;font-weight:800;text-align:center}
+.preloader-inner{display:flex;flex-direction:column;align-items:center;gap:18px}
 
-    .brand-subtitle {
-      margin-top: 5px;
-      color: var(--gold);
-      font-size: 10px;
-      letter-spacing: 3px;
-    }
+.bg-layer{position:fixed;inset:0;z-index:-3;overflow:hidden;pointer-events:none}
+.bg-orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.32;animation:orbDrift 26s ease-in-out infinite}
+.bg-orb.o1{width:540px;height:540px;background:radial-gradient(circle,#1573ff,transparent 70%);top:-140px;left:-120px}
+.bg-orb.o2{width:440px;height:440px;background:radial-gradient(circle,#4fd1ff,transparent 70%);top:38%;right:-140px;animation-delay:-9s}
+.bg-orb.o3{width:400px;height:400px;background:radial-gradient(circle,#1573ff,transparent 70%);bottom:-140px;left:28%;animation-delay:-16s}
+@keyframes orbDrift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(70px,-50px) scale(1.08)}66%{transform:translate(-50px,60px) scale(.94)}}
+.bg-particles{position:absolute;inset:0}
+.bg-particles span{position:absolute;width:4px;height:4px;border-radius:50%;background:rgba(159,212,255,.55);box-shadow:0 0 12px rgba(79,209,255,.7);animation:floatUp linear infinite}
+@keyframes floatUp{0%{transform:translateY(0) scale(.8);opacity:0}15%{opacity:.9}85%{opacity:.9}100%{transform:translateY(-120vh) scale(1.1);opacity:0}}
+.bg-mesh{position:fixed;inset:0;z-index:-4;pointer-events:none;background:radial-gradient(900px 620px at 88% -8%, rgba(21,115,255,.30), transparent 62%),radial-gradient(760px 520px at -8% 42%, rgba(79,209,255,.12), transparent 62%),radial-gradient(700px 500px at 60% 110%, rgba(21,115,255,.14), transparent 60%),linear-gradient(160deg,#081221,#0a1626 46%,#0d1f36);animation:meshShift 30s ease-in-out infinite alternate}
+@keyframes meshShift{0%{background-position:0% 0%, 100% 100%, 50% 50%, 0% 0%}100%{background-position:6% 4%, 94% 96%, 54% 46%, 0% 0%}}
 
-    .status {
-      color: var(--gold);
-      border: 1px solid rgba(229,189,112,0.5);
-      padding: 10px 16px;
-      border-radius: 30px;
-      font-size: 11px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
+.container{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+.section{padding:92px 0;position:relative}
+.section-head{max-width:720px;margin-bottom:40px}
+.kicker{display:inline-block;color:var(--cyan);text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:850;margin-bottom:10px}
+h1{font-size:clamp(38px,5.4vw,66px);letter-spacing:-.05em}
+h2{font-size:clamp(29px,3.6vw,44px);margin:6px 0 14px}
+h3{font-size:17px}
+.grad{background:linear-gradient(100deg,#ffffff 6%,#9fd4ff 48%,#4fd1ff 82%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.muted{color:var(--muted)}
 
-    main {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 75px 22px 90px;
-    }
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 22px;border-radius:12px;font-weight:750;font-size:14px;border:1px solid transparent;cursor:pointer;text-decoration:none;white-space:nowrap;transition:transform .25s ease,box-shadow .25s ease,background .25s ease,border-color .25s ease}
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:translateY(-1px) scale(.98)}
+.btn-primary{background:linear-gradient(120deg,#1573ff,#39a4ff);color:#fff;box-shadow:0 12px 30px rgba(21,115,255,.36)}
+.btn-primary:hover{box-shadow:0 18px 42px rgba(21,115,255,.55)}
+.btn-ghost{border-color:var(--line);background:rgba(223,241,255,.06);color:var(--ice)}
+.btn-ghost:hover{border-color:var(--electric-2);background:rgba(21,115,255,.14)}
+.btn-block{width:100%}
+.ripple{position:absolute;border-radius:50%;pointer-events:none;background:rgba(255,255,255,.5);transform:scale(0);animation:rippleAnim .65s ease-out}
+@keyframes rippleAnim{to{transform:scale(4);opacity:0}}
 
-    .content {
-      width: 100%;
-      max-width: 800px;
-      animation: appear 1s ease both;
-    }
+.nav-wrap{position:sticky;top:0;z-index:80;background:rgba(8,18,33,.82);border-bottom:1px solid var(--line);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+nav{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.03em;line-height:1.12}
+.brand-mark{width:44px;height:44px;flex:none;display:grid;place-items:center;border-radius:13px;font-size:18px;font-weight:900;color:#fff;background:linear-gradient(135deg,#1573ff,#4fd1ff);box-shadow:0 8px 26px rgba(21,115,255,.45);transition:transform .4s cubic-bezier(.22,.7,.3,1)}
+.brand:hover .brand-mark{transform:rotate(-8deg) scale(1.06)}
+.brand-text{font-size:14px}
+.brand-text small{display:block;color:#8fb0d6;font-size:8.5px;letter-spacing:.19em;margin-top:5px;font-weight:700}
 
-    .eyebrow {
-      color: var(--gold);
-      font-size: 12px;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      margin-bottom: 28px;
-    }
+.nav-links{display:flex;align-items:center;gap:26px;font-size:13.5px;font-weight:650}
+.nav-links a.link{color:#cfe2f7;position:relative;padding:4px 0;transition:color .2s}
+.nav-links a.link::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;border-radius:2px;background:linear-gradient(90deg,var(--electric),var(--cyan));transition:width .28s ease}
+.nav-links a.link:hover{color:var(--white)}
+.nav-links a.link:hover::after{width:100%}
 
-    h1 {
-      font-size: clamp(43px, 8vw, 78px);
-      line-height: 1.08;
-      letter-spacing: -2px;
-      font-weight: 800;
-    }
+.call-btn{position:relative;display:inline-flex;align-items:center;gap:9px;padding:12px 20px;border-radius:100px;font-size:13.5px;font-weight:800;color:#fff;background:linear-gradient(120deg,#1573ff,#00b6ff);animation:heartbeat 1.9s ease-in-out infinite}
+.call-btn svg{width:17px;height:17px}
+.call-btn:hover{animation-play-state:paused;transform:scale(1.04)}
+@keyframes heartbeat{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(21,115,255,.55)}12%{transform:scale(1.07)}24%{transform:scale(1)}36%{transform:scale(1.07)}55%{transform:scale(1);box-shadow:0 0 0 16px rgba(21,115,255,0)}}
 
-    h1 span {
-      display: block;
-      color: var(--gold);
-    }
+.menu-toggle{display:none;background:rgba(223,241,255,.06);border:1px solid var(--line);color:#fff;border-radius:11px;padding:10px 13px;cursor:pointer;font-weight:700;font-size:13px}
 
-    .description {
-      max-width: 590px;
-      margin: 27px auto 0;
-      color: var(--muted);
-      font-size: 17px;
-      line-height: 1.9;
-    }
+.hero{position:relative;min-height:660px;overflow:hidden;display:flex;align-items:stretch}
+.slides{position:relative;width:100%;min-height:660px}
+.slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .95s ease,visibility .95s ease;display:flex;align-items:center}
+.slide.active{opacity:1;visibility:visible;z-index:2}
+.slide-bg{position:absolute;inset:0;background-color:#0a1626;background-image:linear-gradient(115deg,rgba(8,18,33,.96) 0%,rgba(10,22,38,.86) 42%,rgba(21,115,255,.30) 100%),var(--img);background-size:cover;background-position:center;transform:scale(1.09);transition:transform 9s ease-out}
+.slide.active .slide-bg{transform:scale(1)}
+.slide-inner{position:relative;z-index:3;padding:96px 0 110px}
+.slide-copy{max-width:680px}
 
-    .gold-line {
-      width: 75px;
-      height: 3px;
-      background: var(--gold);
-      margin: 35px auto;
-      border-radius: 5px;
-    }
+.anim{opacity:0;transform:translateY(30px)}
+.slide.active .anim{animation:riseIn .85s cubic-bezier(.22,.7,.3,1) forwards;animation-delay:var(--d,0s)}
+@keyframes riseIn{to{opacity:1;transform:translateY(0)}}
 
-    .message {
-      color: var(--white);
-      font-size: 14px;
-      letter-spacing: 0.5px;
-      line-height: 1.8;
-    }
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 14px;border-radius:100px;border:1px solid rgba(79,209,255,.3);background:rgba(79,209,255,.08);color:#b7ecff;font-size:11px;font-weight:850;letter-spacing:.15em;text-transform:uppercase}
+.live-dots{display:inline-flex;gap:3px;align-items:center;margin-left:2px}
+.live-dots i{width:5px;height:5px;border-radius:50%;background:#22e07a;animation:livePulse 1.6s ease-in-out infinite}
+.live-dots i:nth-child(2){animation-delay:.22s}
+.live-dots i:nth-child(3){animation-delay:.44s}
+@keyframes livePulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(34,224,122,.6)}50%{transform:scale(1.5);box-shadow:0 0 0 5px rgba(34,224,122,0)}}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--cyan);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(79,209,255,.7)}70%{box-shadow:0 0 0 9px rgba(79,209,255,0)}100%{box-shadow:0 0 0 0 rgba(79,209,255,0)}}
+.hero h1{margin:22px 0 18px}
+.hero-copy{color:#bed4ee;font-size:16.5px;max-width:600px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 
-    .cta {
-      display: inline-block;
-      margin-top: 32px;
-      padding: 15px 29px;
-      border-radius: 5px;
-      background: var(--gold);
-      color: var(--navy);
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      text-decoration: none;
-      transition: transform 0.2s, background 0.2s;
-    }
+.slider-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:6;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(10,22,38,.6);border:1px solid var(--line);color:#fff;cursor:pointer;font-size:22px;line-height:1;backdrop-filter:blur(10px);transition:.25s}
+.slider-arrow:hover{background:var(--electric);border-color:var(--electric);transform:translateY(-50%) scale(1.1)}
+.slider-arrow.prev{left:18px}
+.slider-arrow.next{right:18px}
+.slider-dots{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);z-index:6;display:flex;gap:10px}
+.dot{width:9px;height:9px;border-radius:50%;border:none;cursor:pointer;padding:0;background:rgba(223,241,255,.3);transition:.3s}
+.dot.active{width:30px;border-radius:100px;background:linear-gradient(90deg,var(--electric),var(--cyan))}
 
-    .cta:hover {
-      background: #f3d49b;
-      transform: translateY(-3px);
-    }
+.stat-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:-52px;position:relative;z-index:9;box-shadow:var(--shadow)}
+.stat{background:linear-gradient(160deg,#0e1f37,#0a1626);padding:24px 20px;text-align:center;position:relative;overflow:hidden}
+.stat strong{display:block;font-size:clamp(22px,2.6vw,30px);color:var(--white);letter-spacing:-.03em}
+.stat span{font-size:11.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;font-weight:700}
+.stat::after{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,#4fd1ff,transparent);opacity:0;animation:statScan 6s ease-in-out infinite}
+.stat:nth-child(2)::after{animation-delay:1.5s}
+.stat:nth-child(3)::after{animation-delay:3s}
+.stat:nth-child(4)::after{animation-delay:4.5s}
+@keyframes statScan{0%,90%,100%{opacity:0;transform:translateY(0)}5%,40%{opacity:1;transform:translateY(0)}}
 
-    .globe {
-      width: 92px;
-      height: 92px;
-      margin: 0 auto 35px;
-      border: 1px solid rgba(229,189,112,0.45);
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: var(--gold);
-      font-size: 42px;
-      box-shadow: 0 0 45px rgba(229,189,112,0.08);
-    }
+.grid{display:grid;gap:18px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
 
-    footer {
-      padding: 24px 7%;
-      text-align: center;
-      color: #9eacc1;
-      border-top: 1px solid rgba(255,255,255,0.1);
-      font-size: 12px;
-      line-height: 1.8;
-    }
+.card{padding:26px;border-radius:var(--radius);border:1px solid var(--line);background:linear-gradient(150deg,rgba(223,241,255,.07),rgba(223,241,255,.02));transition:transform .3s ease,border-color .3s ease,background .3s ease,box-shadow .3s ease;position:relative;overflow:hidden}
+.card::after{content:"";position:absolute;inset:0;border-radius:var(--radius);pointer-events:none;background:radial-gradient(420px 200px at 100% 0%,rgba(21,115,255,.22),transparent 70%);opacity:0;transition:opacity .35s ease}
+.card:hover{transform:translateY(-7px);border-color:rgba(79,209,255,.45);box-shadow:0 22px 50px rgba(0,0,0,.32)}
+.card:hover::after{opacity:1}
+.card p{color:var(--muted);font-size:13.5px;margin:0}
 
-    footer strong {
-      color: var(--gold);
-      font-weight: 600;
-    }
+#why .card,
+#services .card{ --mx:50%; --my:50%; }
+#why .card::after,
+#services .card::after{ display:none; }
+#why .card::before,
+#services .card::before{content:"";position:absolute;inset:0;border-radius:var(--radius);pointer-events:none;background:radial-gradient(380px circle at var(--mx) var(--my),rgba(79,209,255,.24),rgba(21,115,255,.10) 40%,transparent 68%);opacity:0;transition:opacity .32s ease;z-index:0}
+#why .card:hover::before,
+#services .card:hover::before{ opacity:1; }
+#why .card > *,
+#services .card > *{ position:relative; z-index:1; }
 
-    @keyframes appear {
-      from {
-        opacity: 0;
-        transform: translateY(18px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+.icon-box{width:48px;height:48px;display:grid;place-items:center;border-radius:14px;margin-bottom:18px;background:linear-gradient(135deg,rgba(21,115,255,.28),rgba(79,209,255,.12));border:1px solid rgba(79,209,255,.3);color:#9fe6ff;transition:transform .35s cubic-bezier(.22,.7,.3,1), box-shadow .35s ease}
+.icon-box svg{width:23px;height:23px}
+.icon-box svg *{stroke-dasharray:120;stroke-dashoffset:120;transition:stroke-dashoffset 1.3s cubic-bezier(.22,.7,.3,1)}
 
-    @media (max-width: 600px) {
-      header {
-        padding: 20px 5%;
-      }
+#services .card.visible .icon-box svg *,
+#services .card:hover .icon-box svg *{ stroke-dashoffset:0; }
+#services .card:hover .icon-box{transform:translateY(-3px) rotate(-4deg) scale(1.06);box-shadow:0 10px 26px rgba(21,115,255,.32)}
 
-      .brand-mark {
-        width: 40px;
-        height: 40px;
-        font-size: 19px;
-      }
+#why .card.visible .icon-box svg *,
+#why .card:hover .icon-box svg *{ stroke-dashoffset:0; }
+#why .card .icon-box{ animation:iconFloat 4s ease-in-out infinite; }
+#why .card:nth-child(2) .icon-box{ animation-delay:.5s; }
+#why .card:nth-child(3) .icon-box{ animation-delay:1s; }
+#why .card:nth-child(4) .icon-box{ animation-delay:1.5s; }
+#why .card:nth-child(5) .icon-box{ animation-delay:2s; }
+#why .card:nth-child(6) .icon-box{ animation-delay:2.5s; }
+@keyframes iconFloat{0%,100%{ transform:translateY(0) rotate(0); }50%{ transform:translateY(-4px) rotate(-2deg); }}
+#why .card:hover .icon-box{ animation-play-state:paused; transform:translateY(-3px) rotate(-4deg) scale(1.06); box-shadow:0 10px 26px rgba(21,115,255,.32); }
 
-      .brand-name {
-        font-size: 13px;
-        letter-spacing: 1px;
-      }
+.card h3{margin-bottom:9px}
 
-      .brand-subtitle {
-        font-size: 8px;
-        letter-spacing: 2px;
-      }
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.about-panel{border:1px solid var(--line);border-radius:22px;padding:30px;background:linear-gradient(150deg,rgba(21,115,255,.14),rgba(223,241,255,.03));box-shadow:var(--shadow)}
+.about-panel p{color:#c4d8ef;font-size:14.5px}
 
-      .status {
-        font-size: 9px;
-        padding: 8px 10px;
-      }
+.highlights{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.highlights li{display:flex;gap:11px;align-items:flex-start;font-size:14px;color:#d3e5f8}
+.tick{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:rgba(79,209,255,.16);color:var(--cyan);font-size:12px;font-weight:900}
+.alert-box{margin-top:26px;padding:15px 17px;border-radius:0 10px 10px 0;border-left:3px solid #ffb84d;background:rgba(255,184,77,.09);color:#ffe0ab;font-size:13.5px;font-weight:600}
 
-      main {
-        padding: 65px 20px;
-      }
+.mission{position:relative;border-radius:26px;padding:48px;overflow:hidden;border:1px solid rgba(79,209,255,.28);background:linear-gradient(125deg,rgba(21,115,255,.20),rgba(79,209,255,.06) 55%,rgba(21,115,255,.10));box-shadow:var(--shadow)}
+.mission::before{content:"";position:absolute;width:420px;height:420px;right:-140px;top:-160px;border-radius:50%;background:radial-gradient(circle,rgba(79,209,255,.24),transparent 68%);animation:missionPulse 8s ease-in-out infinite}
+@keyframes missionPulse{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.15);opacity:1}}
+.mission-inner{position:relative;z-index:2;max-width:820px}
+.mission h2{margin-bottom:16px}
+.mission p{color:#cfe3f8;font-size:15.5px}
 
-      .eyebrow {
-        font-size: 10px;
-        letter-spacing: 3px;
-      }
+.t-wrap{position:relative;overflow:hidden;padding:8px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.t-track{display:flex;gap:18px;width:max-content;animation:marquee 78s linear infinite}
+.t-wrap:hover .t-track{animation-play-state:paused}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.t-card{width:330px;flex:none;padding:24px;border-radius:var(--radius);border:1px solid var(--line);background:linear-gradient(155deg,rgba(223,241,255,.08),rgba(223,241,255,.02));transition:border-color .3s,transform .3s}
+.t-card:hover{border-color:rgba(79,209,255,.5);transform:translateY(-5px)}
+.stars{color:#ffc53d;font-size:14px;letter-spacing:2px;margin-bottom:12px}
+.t-card p{font-size:13.5px;color:#c8dcf2;margin:0 0 18px}
+.t-person{display:flex;align-items:center;gap:12px}
+.avatar{width:42px;height:42px;flex:none;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:14px;color:#fff;background:linear-gradient(135deg,#1573ff,#4fd1ff);box-shadow:0 6px 18px rgba(21,115,255,.35)}
+.t-person strong{display:block;font-size:13.5px;color:var(--white)}
+.t-person span{font-size:11.5px;color:#8fb0d6}
 
-      h1 {
-        letter-spacing: -1px;
-      }
+.quote-shell{border:1px solid var(--line);border-radius:26px;padding:36px;background:linear-gradient(155deg,rgba(15,33,56,.9),rgba(10,22,38,.72));box-shadow:var(--shadow)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{margin-bottom:0}
+.field-full{grid-column:span 2}
+label{display:block;font-size:12.5px;font-weight:750;color:#cfe1f5;margin-bottom:7px}
+label .req{color:#ff8a8a}
+input,select,textarea{width:100%;padding:13px 14px;border-radius:11px;color:#fff;outline:none;border:1px solid rgba(223,241,255,.18);background:#0a1c33;transition:border-color .22s,box-shadow .22s,background .22s,transform .22s}
+input::placeholder,textarea::placeholder{color:#7c9ac0}
+input:focus,select:focus,textarea:focus{border-color:var(--electric-2);background:#0c2340;box-shadow:0 0 0 4px rgba(21,115,255,.18);animation:fieldPulse 1.4s ease}
+@keyframes fieldPulse{0%{box-shadow:0 0 0 0 rgba(21,115,255,.4)}60%{box-shadow:0 0 0 10px rgba(21,115,255,0)}100%{box-shadow:0 0 0 4px rgba(21,115,255,.18)}}
+select{appearance:none;cursor:pointer;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239fd4ff' stroke-width='2.4'><path d='m6 9 6 6 6-6'/></svg>");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
+textarea{min-height:130px;resize:vertical}
+.radio-row{display:flex;gap:10px;flex-wrap:wrap}
+.radio-pill{position:relative}
+.radio-pill input{position:absolute;opacity:0;width:0;height:0}
+.radio-pill span{display:inline-block;padding:11px 20px;border-radius:100px;font-size:13px;font-weight:700;border:1px solid rgba(223,241,255,.2);background:rgba(223,241,255,.04);cursor:pointer;transition:.22s;color:#cfe1f5}
+.radio-pill input:checked + span{background:linear-gradient(120deg,#1573ff,#39a4ff);border-color:transparent;color:#fff;box-shadow:0 8px 22px rgba(21,115,255,.4);animation:chipPop .35s cubic-bezier(.22,.7,.3,1)}
+@keyframes chipPop{0%{transform:scale(.9)}60%{transform:scale(1.06)}100%{transform:scale(1)}}
+.check-row{display:flex;gap:11px;align-items:flex-start;font-size:13px;color:#c2d7ee}
+.check-row input{width:18px;height:18px;flex:none;margin-top:3px;accent-color:#1573ff;cursor:pointer}
+.check-row input:checked{animation:chipPop .35s cubic-bezier(.22,.7,.3,1)}
+.check-row a{color:var(--cyan);text-decoration:underline}
+.trust-line{margin-top:16px;font-size:12px;color:#8fb0d6;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 
-      .description {
-        font-size: 15px;
-      }
-    }
+.submit-overlay{position:fixed;inset:0;z-index:200;background:rgba(8,18,33,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:none;place-items:center;flex-direction:column;gap:26px;opacity:0;transition:opacity .4s ease}
+.submit-overlay.show{display:grid;opacity:1}
+.draw-check{width:140px;height:140px}
+.draw-check circle,
+.draw-check path{fill:none;stroke:#4fd1ff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.draw-check circle{stroke-dasharray:264;stroke-dashoffset:264;animation:drawPath 1s cubic-bezier(.22,.7,.3,1) forwards}
+.draw-check path{stroke-dasharray:100;stroke-dashoffset:100;animation:drawPath .55s cubic-bezier(.22,.7,.3,1) .85s forwards;stroke:#7ff0ff}
+@keyframes drawPath{to{stroke-dashoffset:0}}
+.submit-overlay p{margin:0;font-size:13.5px;letter-spacing:.14em;text-transform:uppercase;color:#cfe1f5;font-weight:800;animation:fadeIn .6s ease .4s both}
 
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation: none !important;
-        transition: none !important;
-      }
-    }
-  </style>
+.contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:26px}
+.contact-card{padding:30px;border-radius:22px;border:1px solid rgba(79,209,255,.32);background:linear-gradient(150deg,rgba(21,115,255,.24),rgba(10,22,38,.85));box-shadow:var(--shadow)}
+.contact-line{display:flex;gap:13px;align-items:flex-start;margin-top:20px;font-size:14px}
+.contact-line .ci{width:38px;height:38px;flex:none;border-radius:11px;display:grid;place-items:center;background:rgba(79,209,255,.14);color:#9fe6ff;border:1px solid rgba(79,209,255,.28)}
+.contact-line .ci svg{width:18px;height:18px}
+.contact-line span small{display:block;color:#8fb0d6;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:750}
+.contact-line a,.contact-line strong{color:#fff;font-weight:750;word-break:break-word}
+.social-row{display:flex;gap:11px;margin-top:26px;flex-wrap:wrap}
+.social-btn{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;border:1px solid var(--line);background:rgba(223,241,255,.05);color:#9fd4ff;transition:.25s}
+.social-btn:hover{background:linear-gradient(135deg,#1573ff,#39a4ff);border-color:transparent;color:#fff;transform:translateY(-4px)}
+.social-btn svg{width:19px;height:19px}
+
+.faq-list{border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:6px 0}
+summary{cursor:pointer;list-style:none;padding:20px 44px 20px 0;position:relative;font-weight:700;font-size:15px;color:#e7f2ff;transition:color .2s}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:rgba(79,209,255,.12);color:var(--cyan);font-size:18px;font-weight:800;transition:transform .3s ease,background .3s ease}
+details[open] summary::after{content:"−";background:var(--electric);color:#fff;transform:translateY(-50%) rotate(180deg)}
+details[open] summary{color:var(--white)}
+details p{color:var(--muted);font-size:14px;max-width:900px;padding:0 44px 20px 0;animation:fadeIn .4s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+
+.footer{margin-top:40px;border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(10,22,38,.4),rgba(6,14,26,.9));padding:60px 0 34px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:36px}
+.footer h4{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#9fd4ff;margin-bottom:16px}
+.footer p,.footer li,.footer a{font-size:13px;color:#9fb8d6}
+.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.footer a:hover{color:var(--cyan)}
+.footer-bottom{margin-top:44px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#8ba7c9}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap}
+
+.float-stack{position:fixed;right:18px;bottom:20px;z-index:90;display:flex;flex-direction:column;gap:12px}
+.fab{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;border:1px solid rgba(255,255,255,.22);box-shadow:0 10px 28px rgba(0,0,0,.42);cursor:pointer;transition:transform .25s ease,box-shadow .25s ease;position:relative}
+.fab:hover{transform:scale(1.09)}
+.fab svg{width:23px;height:23px}
+.fab-call{background:linear-gradient(135deg,#1573ff,#00b6ff);animation:heartbeat 1.9s ease-in-out infinite}
+.fab-wa{background:linear-gradient(135deg,#20b26b,#0e8f52)}
+.fab-ai{background:linear-gradient(135deg,#7a5cff,#4fd1ff)}
+.fab-ai::after{content:"";position:absolute;top:-2px;right:-2px;width:13px;height:13px;border-radius:50%;background:#22e07a;border:2px solid #0a1626;animation:livePulse 1.8s ease-in-out infinite}
+
+.chat-panel{position:fixed;right:18px;bottom:92px;z-index:95;width:min(370px,calc(100vw - 36px));height:min(520px,calc(100vh - 140px));border-radius:20px;overflow:hidden;display:none;flex-direction:column;border:1px solid rgba(79,209,255,.35);background:#0b1c31;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.chat-panel.open{display:flex;animation:chatIn .32s cubic-bezier(.22,.7,.3,1)}
+@keyframes chatIn{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
+.chat-head{padding:16px 18px;display:flex;align-items:center;gap:12px;background:linear-gradient(120deg,rgba(21,115,255,.45),rgba(79,209,255,.22));border-bottom:1px solid var(--line)}
+.chat-head .bot-avatar{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;flex:none;background:linear-gradient(135deg,#7a5cff,#4fd1ff);font-weight:900;color:#fff;font-size:15px}
+.chat-head strong{display:block;font-size:14px;color:#fff}
+.chat-head span{font-size:11px;color:#b9e6ff;display:flex;align-items:center;gap:6px}
+.chat-head span::before{content:"";width:7px;height:7px;border-radius:50%;background:#22e07a;animation:livePulse 1.8s ease-in-out infinite}
+.chat-close{margin-left:auto;background:transparent;border:none;color:#fff;font-size:22px;cursor:pointer;line-height:1;opacity:.8}
+.chat-close:hover{opacity:1}
+.chat-body{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:12px}
+.chat-body::-webkit-scrollbar{width:6px}
+.chat-body::-webkit-scrollbar-thumb{background:rgba(79,209,255,.3);border-radius:10px}
+.msg{max-width:84%;padding:11px 14px;border-radius:14px;font-size:13px;line-height:1.55;animation:fadeIn .3s ease}
+.msg.bot{background:rgba(223,241,255,.08);border:1px solid var(--line);color:#d8e9fa;border-bottom-left-radius:4px}
+.msg.user{background:linear-gradient(120deg,#1573ff,#39a4ff);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 12px}
+.chip{padding:8px 13px;border-radius:100px;font-size:11.5px;font-weight:700;cursor:pointer;border:1px solid rgba(79,209,255,.35);background:rgba(79,209,255,.08);color:#b7ecff;transition:.2s}
+.chip:hover{background:rgba(79,209,255,.2);transform:translateY(-1px)}
+.chat-input{display:flex;gap:9px;padding:13px;border-top:1px solid var(--line);background:#091729}
+.chat-input input{border-radius:100px;padding:11px 16px;font-size:13px}
+.chat-send{width:44px;height:44px;flex:none;border-radius:50%;border:none;cursor:pointer;color:#fff;background:linear-gradient(135deg,#1573ff,#39a4ff);display:grid;place-items:center;transition:.25s}
+.chat-send:hover{transform:scale(1.08)}
+.chat-send svg{width:18px;height:18px}
+
+.cookie-banner{position:fixed;bottom:20px;left:20px;right:20px;z-index:100;max-width:640px;margin:0 auto;padding:18px 20px;border-radius:14px;background:rgba(11,28,49,.97);border:1px solid rgba(79,209,255,.35);box-shadow:0 20px 50px rgba(0,0,0,.5);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:none;align-items:center;gap:16px;flex-wrap:wrap;font-size:13.5px;color:#cfe1f5}
+.cookie-banner.show{display:flex;animation:cookieIn .45s cubic-bezier(.22,.7,.3,1)}
+@keyframes cookieIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.cookie-banner p{margin:0;flex:1;min-width:200px;line-height:1.55}
+.cookie-banner a{color:var(--cyan);text-decoration:underline}
+.cookie-btns{display:flex;gap:8px;flex-wrap:wrap}
+.cookie-btn{padding:9px 18px;border-radius:100px;font-size:12.5px;font-weight:750;cursor:pointer;border:1px solid transparent;transition:.22s}
+.cookie-accept{background:linear-gradient(120deg,#1573ff,#39a4ff);color:#fff;box-shadow:0 8px 20px rgba(21,115,255,.4)}
+.cookie-accept:hover{transform:translateY(-2px)}
+.cookie-reject{background:rgba(223,241,255,.06);border-color:var(--line);color:var(--ice)}
+.cookie-reject:hover{background:rgba(223,241,255,.12)}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .75s ease,transform .75s ease}
+.reveal.visible{opacity:1;transform:none}
+
+@media (max-width:1080px){
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .nav-links{gap:18px;font-size:13px}
+}
+@media (max-width:980px){
+  .menu-toggle{display:block}
+  .nav-links{display:none;position:absolute;top:80px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:16px 20px 24px;background:rgba(8,18,33,.99);border-bottom:1px solid var(--line);box-shadow:0 24px 40px rgba(0,0,0,.5)}
+  .nav-links.open{display:flex}
+  .nav-links a.link{padding:13px 4px;border-bottom:1px solid rgba(223,241,255,.08);font-size:14.5px}
+  .nav-links .call-btn{margin-top:16px;justify-content:center}
+  .about-grid,.contact-grid,.grid-3,.grid-2{grid-template-columns:1fr}
+  .about-grid{gap:32px}
+  .stat-strip{grid-template-columns:1fr 1fr}
+  .mission{padding:32px}
+}
+@media (max-width:640px){
+  .container{width:min(100% - 28px,1180px)}
+  .section{padding:64px 0}
+  .hero,.slides{min-height:600px}
+  .slide-inner{padding:70px 0 96px}
+  .hero-copy{font-size:15px}
+  .slider-arrow{width:38px;height:38px;font-size:18px}
+  .slider-arrow.prev{left:8px}.slider-arrow.next{right:8px}
+  .slider-dots{bottom:24px}
+  .stat-strip{grid-template-columns:1fr 1fr;margin-top:-40px}
+  .stat{padding:18px 12px}
+  .form-grid{grid-template-columns:1fr}
+  .field-full{grid-column:auto}
+  .quote-shell{padding:22px}
+  .footer-grid{grid-template-columns:1fr;gap:28px}
+  .t-card{width:280px}
+  .float-stack{right:12px;bottom:14px}
+  .fab{width:50px;height:50px}
+  .chat-panel{right:12px;bottom:78px;width:calc(100vw - 24px)}
+  .mission{padding:24px}
+  .brand-text small{display:none}
+  .cookie-banner{left:12px;right:12px;bottom:86px;padding:16px}
+  .bg-orb{filter:blur(70px);opacity:.22}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+  .reveal{opacity:1;transform:none}
+  .anim{opacity:1;transform:none}
+  .bg-orb,.bg-particles span,.bg-mesh,.liquid-blob,.preloader,#why .card .icon-box{animation:none !important}
+  .bg-particles{display:none}
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <div class="brand">
-      <div class="brand-mark">S</div>
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <div class="liquid-wrap"><div class="liquid-blob"></div></div>
+    <div class="preloader-text">Loading Srinithii Impex</div>
+  </div>
+</div>
+
+<div class="bg-mesh" aria-hidden="true"></div>
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-orb o1"></div>
+  <div class="bg-orb o2"></div>
+  <div class="bg-orb o3"></div>
+  <div class="bg-particles" id="bgParticles"></div>
+</div>
+
+<div class="submit-overlay" id="submitOverlay" role="status" aria-live="polite">
+  <svg class="draw-check" viewBox="0 0 100 100" aria-hidden="true">
+    <circle cx="50" cy="50" r="42"/>
+    <path d="M30 52 L45 67 L72 38"/>
+  </svg>
+  <p id="submitMsg">Sending your request…</p>
+</div>
+
+<div class="nav-wrap">
+  <nav class="container" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Srinithii Impex home">
+      <span class="brand-mark">SI</span>
+      <span class="brand-text">SRINITHII IMPEX<small>HIGH PERFORMANCE DIGITAL SOLUTIONS</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menu ☰</button>
+    <div class="nav-links" id="navLinks">
+      <a class="link" href="#about">About Us</a>
+      <a class="link" href="#services">Our Services</a>
+      <a class="link" href="#quote">Request a Quote</a>
+      <a class="link" href="#contact">Contact Us</a>
+      <a class="call-btn" href="tel:+919500840755" aria-label="Call Srinithii Impex now">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19a19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.8 2.1Z"/></svg>
+        95008 40755
+      </a>
+    </div>
+  </nav>
+</div>
+
+<main>
+
+<section class="hero" id="home" aria-label="Highlights">
+  <div class="slides" id="slides">
+    <article class="slide active">
+      <div class="slide-bg" style="--img:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1800&amp;q=80')"></div>
+      <div class="container slide-inner">
+        <div class="slide-copy">
+          <span class="eyebrow anim" style="--d:.05s"><span class="pulse"></span> Srinithii Impex · Built for Contractors <span class="live-dots" aria-hidden="true"><i></i><i></i><i></i></span></span>
+          <h1 class="anim" style="--d:.18s">Built to Keep Your Phone <span class="grad">Ringing</span> &amp; Your Schedule Full</h1>
+          <p class="hero-copy anim" style="--d:.32s">High-performance websites, dominant local SEO and 24/7 AI reception — engineered specifically for plumbers, painters, remodelers and electricians.</p>
+          <div class="hero-actions anim" style="--d:.46s">
+            <a class="btn btn-primary" href="#quote">Request a Free Quote ↗</a>
+            <a class="btn btn-ghost" href="#services">Explore Our Services</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="slide-bg" style="--img:url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&amp;fit=crop&amp;w=1800&amp;q=80')"></div>
+      <div class="container slide-inner">
+        <div class="slide-copy">
+          <span class="eyebrow anim" style="--d:.05s"><span class="pulse"></span> Custom Web Design</span>
+          <h1 class="anim" style="--d:.18s">Websites That Turn Visitors Into <span class="grad">Booked Jobs</span></h1>
+          <p class="hero-copy anim" style="--d:.32s">Mobile-first, lightning-fast and built from scratch for your trade — so homeowners on their phones become paying clients on your calendar.</p>
+          <div class="hero-actions anim" style="--d:.46s">
+            <a class="btn btn-primary" href="#quote">Get My Custom Website ↗</a>
+            <a class="btn btn-ghost" href="#why">Why Contractors Choose Us</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="slide-bg" style="--img:url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&amp;fit=crop&amp;w=1800&amp;q=80')"></div>
+      <div class="container slide-inner">
+        <div class="slide-copy">
+          <span class="eyebrow anim" style="--d:.05s"><span class="pulse"></span> AI Receptionist · 24/7</span>
+          <h1 class="anim" style="--d:.18s">Never Miss Another Lead — <span class="grad">Even While You Sleep</span></h1>
+          <p class="hero-copy anim" style="--d:.32s">Our AI-powered receptionist answers homeowner questions, qualifies job details and books appointments automatically — around the clock.</p>
+          <div class="hero-actions anim" style="--d:.46s">
+            <a class="btn btn-primary" href="#quote">Book an AI Demo ↗</a>
+            <a class="btn btn-ghost" href="#faq">How It Works</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="slide-bg" style="--img:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=1800&amp;q=80')"></div>
+      <div class="container slide-inner">
+        <div class="slide-copy">
+          <span class="eyebrow anim" style="--d:.05s"><span class="pulse"></span> Dominant Local SEO</span>
+          <h1 class="anim" style="--d:.18s">Own the Top of Google in <span class="grad">Your Service Area</span></h1>
+          <p class="hero-copy anim" style="--d:.32s">Built-in local optimisation that puts your business in front of homeowners in your target cities and neighbourhoods — right when they search.</p>
+          <div class="hero-actions anim" style="--d:.46s">
+            <a class="btn btn-primary" href="#quote">Boost My Local Rankings ↗</a>
+            <a class="btn btn-ghost" href="#about">About Srinithii Impex</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+  <button class="slider-arrow prev" id="prevSlide" aria-label="Previous slide">‹</button>
+  <button class="slider-arrow next" id="nextSlide" aria-label="Next slide">›</button>
+  <div class="slider-dots" id="sliderDots" aria-label="Slide navigation"></div>
+</section>
+
+<div class="container">
+  <div class="stat-strip reveal">
+    <div class="stat"><strong>24/7</strong><span>AI Reception</span></div>
+    <div class="stat"><strong>&lt; 60s</strong><span>Lead Response</span></div>
+    <div class="stat"><strong>100%</strong><span>Custom Built</span></div>
+    <div class="stat"><strong>0</strong><span>Missed Calls</span></div>
+  </div>
+</div>
+
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="kicker">About Us</span>
+      <h2>Built to Keep Your Phone Ringing &amp; <span class="grad">Your Schedule Full</span></h2>
+      <p class="muted">At Srinithii Impex, we specialise in high-performance digital solutions tailored specifically for home service contractors — from plumbers and painters to remodelers and electricians.</p>
+      <p class="muted">We know that in the trades, <strong style="color:#fff">missed calls mean missed revenue</strong>. If a homeowner has an emergency or needs a fast estimate, they won't wait — they'll call your competitor.</p>
+      <ul class="highlights">
+        <li><span class="tick">✓</span><span><strong style="color:#fff">We don't just build pretty websites</strong> — we engineer complete lead-generation systems.</span></li>
+        <li><span class="tick">✓</span><span><strong style="color:#fff">Capture, qualify and book jobs</strong> 24 hours a day, 7 days a week.</span></li>
+        <li><span class="tick">✓</span><span><strong style="color:#fff">Trade-specific builds</strong> that speak the language of your customers.</span></li>
+      </ul>
+      <div class="alert-box">⚡ Every missed call is a job in your competitor's pocket. Let's make sure that never happens again.</div>
+      <div style="margin-top:28px"><a class="btn btn-primary" href="#quote">Get a Free Quote ↗</a></div>
+    </div>
+    <aside class="about-panel reveal">
+      <h3 style="margin-bottom:14px">A technology partner, not just a vendor</h3>
+      <p>Srinithii Impex builds complete digital systems for home service businesses — websites, local search visibility, instant lead capture and automated booking.</p>
+      <p>Each engagement is scoped around your trade, your service area and your growth goals — never a one-size-fits-all template.</p>
+      <p style="color:#9fd4ff;font-weight:700;margin-top:18px">Based in Salem, Tamil Nadu, India<br>Serving contractors across the USA &amp; Canada</p>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Why Contractors Choose Us</span>
+      <h2>Six reasons your competitors <span class="grad">hope you never read this</span></h2>
+      <p class="muted">Everything we build is designed around one outcome: more qualified jobs on your calendar, with less admin work for you.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 8h10M7 12h6"/></svg></div>
+        <h3>Custom, High-Speed Web Design</h3>
+        <p>Modern, mobile-first websites engineered to look flawless on smartphones and turn casual visitors into paying clients.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M8 10.5l2 2 3.5-4"/></svg></div>
+        <h3>Dominant Local SEO</h3>
+        <p>Built-in local optimisation designed to put your business at the top of Google searches in your target cities and neighbourhoods.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-5l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="M8 9h8M8 12h5"/></svg></div>
+        <h3>24/7 AI-Powered Receptionist</h3>
+        <p>An intelligent digital assistant that answers homeowner inquiries, qualifies job details and books appointments automatically — even while you're on the job site or asleep.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/></svg></div>
+        <h3>Instant Lead Capture</h3>
+        <p>Automated SMS and chat systems that respond to inquiries within seconds, stopping homeowners from reaching out to your competitors.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 20V4M3 20h18M7 16l4-5 3 2 6-8"/><path d="M16 5h4v4"/></svg></div>
+        <h3>Trade-Specific Showcases</h3>
+        <p>Custom portfolios built to cleanly highlight your best work, build immediate credibility and win higher-value projects.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1"/><circle cx="12" cy="12" r="5"/></svg></div>
+        <h3>Smart Workflow Automation</h3>
+        <p>Seamless live calendar syncing to prevent double-booking, paired with emergency escalation routing that sends high-priority alerts straight to your mobile phone.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="mission">
+  <div class="container">
+    <div class="mission reveal">
+      <div class="mission-inner">
+        <span class="kicker">Our Mission</span>
+        <h2>Give local contractors the tech tools to <span class="grad">dominate their market.</span></h2>
+        <p>Our mission is simple: to give local contractors the modern tech tools they need to dominate their market, eliminate manual office work and maximise their profitability.</p>
+        <p>Whether you're looking to scale your operations or streamline your booking process, Srinithii Impex is your dedicated technology partner for consistent, scalable growth.</p>
+        <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="#quote">Start My Growth Plan ↗</a>
+          <a class="btn btn-ghost" href="#contact">Talk to Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Our Services</span>
+      <h2>Everything you need to <span class="grad">fill your calendar</span></h2>
+      <p class="muted">Two complete systems working together — a website engineered to convert, and an AI receptionist engineered to respond.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 8h10M7 12h6"/></svg></div>
+        <h3>Custom Website Design</h3>
+        <p>We build fast, professional websites optimised to rank locally and convert casual visitors into paying customers.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
+        <h3>Mobile-First Layouts</h3>
+        <p>Built to look perfect on homeowners' phones — where the vast majority of your emergency and estimate searches begin.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M8 10.5l2 2 3.5-4"/></svg></div>
+        <h3>Local SEO Setup</h3>
+        <p>Optimised so your business ranks high on Google searches in your city, county and surrounding neighbourhoods.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="m4 15 5-5 4 4 3-3 4 4"/><circle cx="9" cy="9" r="1.4"/></svg></div>
+        <h3>Trade-Specific Portfolios</h3>
+        <p>Showcases your best plumbing, painting or remodeling work cleanly — with galleries and before/after sliders that build trust.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 4h16v16H4zM8 8h8M8 12h5M8 16h8"/></svg></div>
+        <h3>High-Conversion Forms</h3>
+        <p>Easy click-to-call and quick quote buttons placed for immediate action, capturing quality leads directly from your site.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-5l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="M8 9h8M8 12h5"/></svg></div>
+        <h3>24/7 AI Receptionist &amp; Booking</h3>
+        <p>We deploy an intelligent assistant that handles your leads, answers questions and fills your calendar automatically.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/></svg></div>
+        <h3>Instant Text / Chat Response</h3>
+        <p>Grabs homeowners the second they reach out — stopping them from calling your competitors while you're on a job.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Smart Job Qualification</h3>
+        <p>Asks for project details, location and photos before booking — so your team only spends time on real, ready-to-buy leads.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18M8 15h3"/></svg></div>
+        <h3>Live Calendar Integration</h3>
+        <p>Reads your available slots instantly — zero risk of double-booking, and clients book directly without back-and-forth emails.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7l-9-5Z"/><path d="M12 8v4M12 16h.01"/></svg></div>
+        <h3>Emergency Escalation</h3>
+        <p>Routes urgent leaks, outages or damage alerts straight to your phone via text — so critical jobs never wait in a queue.</p>
+      </article>
+      <article class="card reveal" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;background:linear-gradient(150deg,rgba(21,115,255,.24),rgba(79,209,255,.06))">
+        <h3 style="margin-bottom:10px">Not sure what you need?</h3>
+        <p style="margin-bottom:18px">Tell us about your trade and your goals — we'll recommend the right mix.</p>
+        <a class="btn btn-primary" href="#quote">Get a Free Quote ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Testimonials</span>
+      <h2>Contractors who stopped <span class="grad">chasing leads</span></h2>
+      <p class="muted">Real feedback from service businesses building with Srinithii Impex.</p>
+    </div>
+  </div>
+  <div class="t-wrap" aria-label="Client testimonials carousel">
+    <div class="t-track" id="tTrack">
+      <article class="t-card"><div class="stars">★★★★★</div><p>"Our phone hasn't stopped ringing since the new site went live. The AI receptionist books jobs while we're on site — it's like hiring a full-time office manager."</p><div class="t-person"><span class="avatar">LO</span><div><strong>Liam O'Connor</strong><span>Plumbing · Dublin, Ireland</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"We used to lose half our after-hours calls. Now every single one gets answered, qualified and booked. Genuinely changed how we run the business."</p><div class="t-person"><span class="avatar">SR</span><div><strong>Sofia Rossi</strong><span>Electrical · Milan, Italy</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★☆</div><p>"Clean design, fast loading, and the portfolio section wins us bigger remodels. Clients mention the website on almost every call now."</p><div class="t-person"><span class="avatar">AA</span><div><strong>Ahmed Al-Farsi</strong><span>Remodeling · Dubai, UAE</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"We rank in the top three for our main service keywords. The local SEO work paid for itself within the first two months."</p><div class="t-person"><span class="avatar">YT</span><div><strong>Yuki Tanaka</strong><span>HVAC · Osaka, Japan</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"The instant SMS reply is the killer feature. Homeowners get an answer in seconds, so they stop shopping around. Our close rate jumped."</p><div class="t-person"><span class="avatar">CM</span><div><strong>Carlos Mendes</strong><span>Roofing · São Paulo, Brazil</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"Booking straight into our live calendar means no more double-bookings. My admin hours dropped by more than half."</p><div class="t-person"><span class="avatar">EJ</span><div><strong>Emma Johansson</strong><span>Painting · Stockholm, Sweden</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★☆</div><p>"Emergency escalation texts me the moment a burst pipe enquiry lands. We've won several urgent jobs purely because we replied first."</p><div class="t-person"><span class="avatar">RK</span><div><strong>Rajesh Kumar</strong><span>Plumbing · Mumbai, India</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"Professional from start to finish. The team understood the trades — they didn't need everything explained twice."</p><div class="t-person"><span class="avatar">CD</span><div><strong>Chloé Dubois</strong><span>Landscaping · Paris, France</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"Smart job qualification filters out the tyre-kickers. Every enquiry that reaches my phone is a real project with a real budget."</p><div class="t-person"><span class="avatar">MG</span><div><strong>Mateo García</strong><span>Electrical · Madrid, Spain</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"The mobile experience is flawless. Most of our customers find us on their phones and the site just works."</p><div class="t-person"><span class="avatar">HM</span><div><strong>Hannah Müller</strong><span>HVAC · Berlin, Germany</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★☆</div><p>"Great communication and a site that actually looks like our brand, not a generic template. Very happy with the result."</p><div class="t-person"><span class="avatar">NA</span><div><strong>Noah Andersen</strong><span>Carpentry · Copenhagen, Denmark</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"The AI receptionist handles the repetitive questions so my team doesn't have to. It has genuinely given us our evenings back."</p><div class="t-person"><span class="avatar">PN</span><div><strong>Priya Nair</strong><span>Interiors · Kochi, India</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"Leads come in and get followed up automatically. We stopped losing enquiries to slow response times entirely."</p><div class="t-person"><span class="avatar">DO</span><div><strong>David Okafor</strong><span>Roofing · Lagos, Nigeria</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"Our before-and-after gallery closes deals before we even arrive on site. Best marketing investment we've made."</p><div class="t-person"><span class="avatar">IM</span><div><strong>Isabella Moretti</strong><span>Remodeling · Rome, Italy</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★☆</div><p>"Reliable support and quick turnaround on changes. It feels like having an in-house web team without the payroll."</p><div class="t-person"><span class="avatar">KS</span><div><strong>Kenji Sato</strong><span>Electrician · Tokyo, Japan</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"We expanded into two new cities and the local SEO structure made ranking there far easier than we expected."</p><div class="t-person"><span class="avatar">AN</span><div><strong>Amara Nwosu</strong><span>Cleaning Services · Abuja, Nigeria</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"Fast, modern, and built to convert. The quote form alone brings us several qualified leads every week."</p><div class="t-person"><span class="avatar">LS</span><div><strong>Lucas Silva</strong><span>Painting · Lisbon, Portugal</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"The calendar sync is seamless. Clients book themselves and I just show up. Exactly how it should work."</p><div class="t-person"><span class="avatar">FZ</span><div><strong>Fatima Zahra</strong><span>Handyman · Casablanca, Morocco</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★☆</div><p>"Straightforward pricing, clear timelines and no jargon. They explained exactly what we were paying for."</p><div class="t-person"><span class="avatar">EB</span><div><strong>Ethan Brooks</strong><span>Flooring · Toronto, Canada</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"Our old site never generated a single lead. This one generates them daily. That's the whole review."</p><div class="t-person"><span class="avatar">MK</span><div><strong>Mia Kowalski</strong><span>Windows &amp; Doors · Warsaw, Poland</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"The AI handles enquiries in a way that still feels human. Customers don't even realise they're talking to a bot."</p><div class="t-person"><span class="avatar">OB</span><div><strong>Oliver Bennett</strong><span>HVAC · Sydney, Australia</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"Booked three extra jobs in the first week from the new landing page. Paid for itself almost immediately."</p><div class="t-person"><span class="avatar">ZH</span><div><strong>Zara Haddad</strong><span>Solar Installation · Amman, Jordan</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★☆</div><p>"Solid work and a team that actually responds. Communication was the best part of the whole project."</p><div class="t-person"><span class="avatar">NR</span><div><strong>Nikhil Reddy</strong><span>Plumbing · Hyderabad, India</span></div></div></article>
+      <article class="t-card"><div class="stars">★★★★★</div><p>"We finally look like the biggest company in our area — even though we're a three-person crew."</p><div class="t-person"><span class="avatar">GK</span><div><strong>Grace Kim</strong><span>Renovations · Seoul, South Korea</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     QUOTE FORM — posts to Web3Forms → emails info@srinithiiimpex.com
+     ============================================================ -->
+<section class="section" id="quote">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Request a Quote</span>
+      <h2>Get a Free Quote for <span class="grad">Your Project</span></h2>
+      <p class="muted">Tell us what you need. We'll respond within 1 business day.</p>
+    </div>
+
+    <div class="quote-shell reveal">
+      <form id="quoteForm"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            novalidate>
+
+        <!-- Web3Forms config -->
+        <input type="hidden" name="access_key" value="b45623c4-84f1-4879-bfe3-b96990331a26" />
+        <input type="hidden" name="subject" value="New Quote Request — Srinithii Impex" />
+        <input type="hidden" name="from_name" value="Srinithii Impex Website" />
+        <input type="hidden" name="redirect" value="https://srinithiiimpex.com/thank-you.html" />
+        <!-- Honeypot -->
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="fullName">Full Name <span class="req">*</span></label>
+            <input id="fullName" name="name" type="text" autocomplete="name" placeholder="Your full name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone <span class="req">*</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 555 000 0000" required />
+          </div>
+          <div class="field">
+            <label for="company">Company (Optional)</label>
+            <input id="company" name="company" type="text" autocomplete="organization" placeholder="Your business name" />
+          </div>
+          <div class="field">
+            <label for="state">State <span class="req">*</span></label>
+            <select id="state" name="state" required>
+              <option value="">Select your state</option>
+              <option>Arizona</option><option>Texas</option><option>Florida</option>
+              <option>Indiana</option><option>North Carolina</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="service">Service Needed <span class="req">*</span></label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option>Custom Website Design</option><option>Mobile-First Layouts</option>
+              <option>Local SEO Setup</option><option>Trade-Specific Portfolios</option>
+              <option>High-Conversion Forms</option><option>24/7 AI Receptionist &amp; Booking</option>
+              <option>Instant Text/Chat Response</option><option>Smart Job Qualification</option>
+              <option>Live Calendar Integration</option><option>Emergency Escalation</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field field-full">
+            <label for="details">Project Details <span class="req">*</span></label>
+            <textarea id="details" name="message" required placeholder="Tell us about your project, timeline, and budget range."></textarea>
+          </div>
+          <div class="field field-full">
+            <label>Preferred Contact Method</label>
+            <div class="radio-row">
+              <label class="radio-pill"><input type="radio" name="contact_method" value="Email" checked /><span>Email</span></label>
+              <label class="radio-pill"><input type="radio" name="contact_method" value="Phone" /><span>Phone</span></label>
+              <label class="radio-pill"><input type="radio" name="contact_method" value="Text" /><span>Text</span></label>
+            </div>
+          </div>
+          <div class="field field-full">
+            <label for="hearAbout">How did you hear about us? (Optional)</label>
+            <input id="hearAbout" name="hear_about" type="text" placeholder="Google, referral, social media…" />
+          </div>
+          <div class="field field-full">
+            <label class="check-row" for="consent">
+              <input id="consent" name="consent" type="checkbox" value="Yes" required />
+              <span>I agree to be contacted by Srinithii Impex. View our <a href="legal.html#privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</span>
+            </label>
+          </div>
+        </div>
+
+        <div style="margin-top:24px">
+          <button class="btn btn-primary" type="submit">Request My Free Quote ↗</button>
+        </div>
+        <div class="trust-line">
+          <span>🔒</span><span>No spam. No obligation. Your information is secure.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT — quick form also posts to Web3Forms
+     ============================================================ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Contact Us</span>
+      <h2>Let's get your phone <span class="grad">ringing again</span></h2>
+      <p class="muted">Call, message or send us a note — we usually reply the same working day.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <h3 style="margin-bottom:12px">Reach us directly</h3>
+        <p class="muted" style="font-size:13.5px">Prefer to talk? Our line is open for contractors across the USA and Canada.</p>
+        <div class="contact-line"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19a19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.8 2.1Z"/></svg></span><span><small>Phone / WhatsApp</small><a href="tel:+919500840755">95008 40755</a></span></div>
+        <div class="contact-line"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span><span><small>Email</small><a href="mailto:info@srinithiiimpex.com">info@srinithiiimpex.com</a></span></div>
+        <div class="contact-line"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><span><small>Head Office</small><strong>Salem, Tamil Nadu, India</strong></span></div>
+
+        <div style="margin-top:26px">
+          <label for="locationSelect">Select your location / service area</label>
+          <select id="locationSelect" aria-label="Select your location">
+            <option value="">Choose a location</option>
+            <option>Arizona</option><option>Texas</option><option>Florida</option>
+            <option>Indiana</option><option>North Carolina</option><option>Other</option>
+          </select>
+          <p class="muted" id="locationNote" style="font-size:12px;margin-top:10px">Serving contractors across the USA &amp; Canada.</p>
+        </div>
+        <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="tel:+919500840755">Call Now</a>
+          <a class="btn btn-ghost" href="https://wa.me/919500840755?text=Hello%20Srinithii%20Impex%2C%20I%27d%20like%20to%20discuss%20my%20project." target="_blank" rel="noopener noreferrer">WhatsApp Us ↗</a>
+        </div>
+      </div>
+
+      <div class="quote-shell reveal">
+        <h3 style="margin-bottom:14px">Send a quick message</h3>
+        <p class="muted" style="font-size:13.5px;margin-bottom:22px">Short on time? Send us the essentials and we'll take it from there.</p>
+
+        <form id="quickForm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              novalidate>
+
+          <input type="hidden" name="access_key" value="b45623c4-84f1-4879-bfe3-b96990331a26" />
+          <input type="hidden" name="subject" value="New Quick Message — Srinithii Impex" />
+          <input type="hidden" name="from_name" value="Srinithii Impex Website" />
+          <input type="hidden" name="redirect" value="https://srinithiiimpex.com/thank-you.html" />
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="qName">Name <span class="req">*</span></label>
+              <input id="qName" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="qPhone">Phone <span class="req">*</span></label>
+              <input id="qPhone" name="phone" type="tel" placeholder="+1 555 000 0000" required />
+            </div>
+            <div class="field field-full">
+              <label for="qMessage">Message <span class="req">*</span></label>
+              <textarea id="qMessage" name="message" required placeholder="What can we help you with?" style="min-height:110px"></textarea>
+            </div>
+          </div>
+          <div style="margin-top:20px">
+            <button class="btn btn-primary btn-block" type="submit">Send Message ↗</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">FAQ</span>
+      <h2>Frequently Asked <span class="grad">Questions</span></h2>
+      <p class="muted">Everything contractors ask us before getting started.</p>
+    </div>
+    <div class="faq-list reveal">
+      <details><summary>Will my website be built from scratch or use a generic template?</summary><p>We build completely custom website designs tailored to your brand identity, business goals and specific industry needs. Every layout is crafted from the ground up to ensure your business stands out from competitors and offers a unique experience to your visitors.</p></details>
+      <details><summary>Will my website work well on mobile phones and tablets?</summary><p>Yes. We develop every site using a mobile-first approach, ensuring your web pages load fast, look sharp and function seamlessly on smartphones, tablets, laptops and desktop computers alike.</p></details>
+      <details><summary>How will local customers in my area find my business online?</summary><p>Our Local SEO setup optimises your website for regional search queries, Google Maps and local directory listings. We optimise your page content, meta tags and location data so customers in your target states and cities can easily discover your services when searching online.</p></details>
+      <details><summary>Can I showcase specific projects, case studies or trade-related work?</summary><p>Absolutely. We design dedicated portfolio pages tailored to your specific industry or trade — complete with high-resolution image galleries, before-and-after sliders and detailed project overviews to demonstrate your expertise to potential clients.</p></details>
+      <details><summary>How do custom forms help convert website visitors into leads?</summary><p>We craft strategic, user-friendly forms designed to reduce friction and encourage visitors to take action. Whether it is requesting a quote, booking an inspection or asking a question, our high-conversion forms capture quality leads directly from your site.</p></details>
+      <details><summary>How does the instant chat feature work for new website inquiries?</summary><p>When a visitor submits an inquiry or initiates a live chat, our automated response integration instantly sends an SMS or chat reply to engage them within seconds. This ensures you never miss a lead, even outside normal business hours.</p></details>
+      <details><summary>How can we filter out unqualified leads before spending time on them?</summary><p>Smart Job Qualification uses interactive multi-step forms and automated logic to ask prospective clients key questions about their budget, timeline and scope of work before they submit a request. This saves your team time by screening leads automatically.</p></details>
+      <details><summary>Can clients schedule appointments or consultations directly on the site?</summary><p>Yes. We connect your website to your preferred calendar software (such as Google Calendar, Calendly or Outlook). Clients can view your real-time availability and book an appointment or consultation directly without back-and-forth emails.</p></details>
+      <details><summary>What happens if a client submits an urgent or off-hours service request?</summary><p>Our emergency escalation feature detects urgent keywords or high-priority selections on your contact forms and immediately routes SMS notifications or phone alerts to on-call team members, ensuring rapid response for critical issues.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
       <div>
-        <div class="brand-name">SRI NIDHI IMPEX</div>
-        <div class="brand-subtitle">QUALITY • TRUST • SERVICE</div>
+        <a class="brand" href="#home" style="margin-bottom:16px">
+          <span class="brand-mark">SI</span>
+          <span class="brand-text">SRINITHII IMPEX<small>HIGH PERFORMANCE DIGITAL SOLUTIONS</small></span>
+        </a>
+        <p style="margin-top:16px">High-performance websites, local SEO and 24/7 AI reception systems built for home service contractors across the USA &amp; Canada.</p>
+        <p style="color:#9fd4ff;font-weight:700;margin-top:12px">Salem, Tamil Nadu, India</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#mission">Our Mission</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#quote">Request a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Custom Website Design</a></li>
+          <li><a href="#services">Local SEO Setup</a></li>
+          <li><a href="#services">Trade Portfolios</a></li>
+          <li><a href="#services">24/7 AI Receptionist</a></li>
+          <li><a href="#services">Emergency Escalation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><a href="tel:+919500840755">📞 95008 40755</a></li>
+          <li><a href="mailto:info@srinithiiimpex.com">✉ info@srinithiiimpex.com</a></li>
+          <li><a href="https://wa.me/919500840755" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a></li>
+          <li><a href="#contact">📍 Contact &amp; Locations</a></li>
+        </ul>
+        <h4 style="margin-top:24px">Follow Us</h4>
+        <div class="social-row">
+          <a class="social-btn" href="https://facebook.com/srinithiiimpex" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.91 3.78-3.91 1.1 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.76 8.43-4.92 8.43-9.94Z"/></svg></a>
+          <a class="social-btn" href="https://instagram.com/srinithiiimpex" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a class="social-btn" href="https://linkedin.com/company/srinithiiimpex" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.6c0-1.34-.03-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4V9Z"/></svg></a>
+          <a class="social-btn" href="https://x.com/srinithiiimpex" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)" title="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 3h3l-6.55 7.5L21.8 21h-5.9l-4.3-5.6L6.6 21H3.5l7-8L2.6 3h6l3.9 5.2L17.5 3Zm-1.05 16h1.65L7.65 4.7H5.9L16.45 19Z"/></svg></a>
+        </div>
       </div>
     </div>
 
-    <div class="status">● Coming Soon</div>
-  </header>
-
-  <main>
-    <section class="content">
-
-      <div class="globe" aria-hidden="true">◎</div>
-
-      <p class="eyebrow">Our New Digital Home</p>
-
-      <h1>
-        Something Great
-        <span>Is Coming.</span>
-      </h1>
-
-      <p class="description">
-        We are preparing something special for our customers
-        and international business partners. Our new website
-        is currently under development.
-      </p>
-
-      <div class="gold-line"></div>
-
-      <p class="message">
-        A new online experience. The same commitment to quality and trust.
-        <br>
-        Thank you for your patience.
-      </p>
-
-      <a class="cta" href="#contact">
-        STAY CONNECTED &nbsp; →
-      </a>
-
-      <div id="contact"
-           style="margin-top: 28px; color: #c5d0e0;
-                  font-size: 13px; line-height: 1.8;">
-        Business enquiry details will be available soon.
+    <div class="footer-bottom">
+      <span>© <span id="year">2025</span> Srinithii Impex. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="legal.html#privacy">Privacy Policy</a>
+        <a href="legal.html#terms">Terms of Service</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
       </div>
+    </div>
+  </div>
+</footer>
 
-    </section>
-  </main>
+<div class="float-stack" aria-label="Quick actions">
+  <a class="fab fab-call" href="tel:+919500840755" aria-label="Call Srinithii Impex" title="Call 95008 40755">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19a19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.8 2.1Z"/></svg>
+  </a>
+  <a class="fab fab-wa" href="https://wa.me/919500840755?text=Hello%20Srinithii%20Impex%2C%20I%27d%20like%20to%20discuss%20my%20project." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Srinithii Impex" title="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-4.8A8.4 8.4 0 1 1 20.5 11.5Z"/><path d="M8.6 8.2c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .6.4.7 1.1 1.4 1.8 1.8.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.3.1.4.3.4.5 0 .4-.2 1.1-.7 1.5-.5.5-1.2.7-2 .5-1.1-.3-2.5-1-3.8-2.3-1.3-1.3-2-2.7-2.2-3.8-.2-.7 0-1.2.4-1.4Z"/></svg>
+  </a>
+  <button class="fab fab-ai" id="aiFab" aria-label="Open AI assistant" title="AI Assistant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="12" rx="3"/><path d="M12 3v4M8.5 12h.01M15.5 12h.01M9 16h6"/></svg>
+  </button>
+</div>
 
-  <footer>
-    © <span id="year">2026</span> <strong>Sri Nidhi Impex</strong>.
-    All rights reserved.
-    <br>
-    <span>Official website · srinithiiimpex.com</span>
-  </footer>
+<section class="chat-panel" id="chatPanel" aria-label="AI assistant chat" aria-hidden="true">
+  <header class="chat-head">
+    <span class="bot-avatar">SI</span>
+    <div><strong>Nidhi · AI Assistant</strong><span>Online now</span></div>
+    <button class="chat-close" id="chatClose" aria-label="Close chat">×</button>
+  </header>
+  <div class="chat-body" id="chatBody">
+    <div class="msg bot">Hi 👋 I'm Nidhi, the Srinithii Impex AI assistant. Ask me about websites, local SEO, our 24/7 AI receptionist or pricing — or tap a quick option below.</div>
+  </div>
+  <div class="chips" id="chatChips">
+    <button class="chip" data-q="How much does a website cost?">💰 Pricing</button>
+    <button class="chip" data-q="Tell me about local SEO">🔍 Local SEO</button>
+    <button class="chip" data-q="How does the AI receptionist work?">🤖 AI Receptionist</button>
+    <button class="chip" data-q="How long does it take to build?">⏱ Timeline</button>
+    <button class="chip" data-q="I want to talk to a human">📞 Talk to a human</button>
+  </div>
+  <form class="chat-input" id="chatForm">
+    <input id="chatInput" type="text" placeholder="Type your message…" autocomplete="off" aria-label="Type your message" />
+    <button class="chat-send" type="submit" aria-label="Send message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4 20-7Z"/></svg></button>
+  </form>
+</section>
 
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie notice">
+  <p>We use cookies to improve your experience on our site. Read our <a href="legal.html#privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="cookie-btn cookie-reject" id="cookieReject" type="button">Reject</button>
+    <button class="cookie-btn cookie-accept" id="cookieAccept" type="button">Accept</button>
+  </div>
+</div>
 
+<script>
+(function () {
+  'use strict';
+
+  var reduceMotion = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  window.addEventListener('load', function () {
+    var pl = document.getElementById('preloader');
+    var delay = reduceMotion ? 100 : 900;
+    setTimeout(function () {
+      pl.classList.add('hidden');
+      setTimeout(function () { pl.style.display = 'none'; }, 950);
+    }, delay);
+  });
+
+  (function buildParticles() {
+    if (reduceMotion) return;
+    var host = document.getElementById('bgParticles');
+    if (!host) return;
+    var count = window.innerWidth < 720 ? 14 : 26;
+    for (var i = 0; i < count; i++) {
+      var s = document.createElement('span');
+      var size = 2 + Math.random() * 3;
+      s.style.left = Math.random() * 100 + '%';
+      s.style.bottom = '-20px';
+      s.style.width = size + 'px';
+      s.style.height = size + 'px';
+      s.style.animationDuration = (14 + Math.random() * 14) + 's';
+      s.style.animationDelay = (-Math.random() * 20) + 's';
+      s.style.opacity = (0.3 + Math.random() * 0.5).toFixed(2);
+      host.appendChild(s);
+    }
+  })();
+
+  var menuToggle = document.getElementById('menuToggle');
+  var navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', function () {
+    var open = navLinks.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.textContent = open ? 'Close ✕' : 'Menu ☰';
+  });
+  navLinks.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = 'Menu ☰';
+    });
+  });
+
+  var slides = Array.prototype.slice.call(document.querySelectorAll('#slides .slide'));
+  var dotsWrap = document.getElementById('sliderDots');
+  var current = 0, timer = null, DELAY = 6500;
+
+  slides.forEach(function (_, i) {
+    var b = document.createElement('button');
+    b.className = 'dot' + (i === 0 ? ' active' : '');
+    b.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+    b.addEventListener('click', function () { goTo(i); restart(); });
+    dotsWrap.appendChild(b);
+  });
+  var dots = Array.prototype.slice.call(dotsWrap.children);
+
+  function goTo(index) {
+    current = (index + slides.length) % slides.length;
+    slides.forEach(function (s, i) { s.classList.toggle('active', i === current); });
+    dots.forEach(function (d, i) { d.classList.toggle('active', i === current); });
+  }
+  function next() { goTo(current + 1); }
+  function prev() { goTo(current - 1); }
+  function start() { timer = setInterval(next, DELAY); }
+  function stop() { clearInterval(timer); }
+  function restart() { stop(); start(); }
+
+  document.getElementById('nextSlide').addEventListener('click', function () { next(); restart(); });
+  document.getElementById('prevSlide').addEventListener('click', function () { prev(); restart(); });
+
+  var hero = document.querySelector('.hero');
+  hero.addEventListener('mouseenter', stop);
+  hero.addEventListener('mouseleave', start);
+
+  var startX = 0;
+  hero.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+  hero.addEventListener('touchend', function (e) {
+    var dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 55) { dx < 0 ? next() : prev(); restart(); }
+  }, { passive: true });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') { next(); restart(); }
+    if (e.key === 'ArrowLeft') { prev(); restart(); }
+  });
+
+  start();
+
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(function (el) { obs.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  var track = document.getElementById('tTrack');
+  if (track) { track.innerHTML += track.innerHTML; }
+
+  if (window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    document.querySelectorAll('#why .card, #services .card').forEach(function (card) {
+      card.addEventListener('mousemove', function (e) {
+        var r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+      card.addEventListener('mouseleave', function () {
+        card.style.setProperty('--mx', '50%');
+        card.style.setProperty('--my', '50%');
+      });
+    });
+  }
+
+  document.querySelectorAll('.btn').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      if (reduceMotion) return;
+      var r = btn.getBoundingClientRect();
+      var size = Math.max(r.width, r.height);
+      var span = document.createElement('span');
+      span.className = 'ripple';
+      span.style.width = span.style.height = size + 'px';
+      span.style.left = (e.clientX - r.left - size / 2) + 'px';
+      span.style.top  = (e.clientY - r.top  - size / 2) + 'px';
+      btn.appendChild(span);
+      setTimeout(function () { span.remove(); }, 700);
+    });
+  });
+
+  var locSelect = document.getElementById('locationSelect');
+  var locNote = document.getElementById('locationNote');
+  locSelect.addEventListener('change', function () {
+    if (!locSelect.value) {
+      locNote.textContent = 'Serving contractors across the USA & Canada.';
+    } else if (locSelect.value === 'Other') {
+      locNote.textContent = 'No problem — we work with contractors in many regions. Tell us where you operate.';
+    } else {
+      locNote.textContent = 'Great! We support contractors in ' + locSelect.value + '. Request a quote and we\'ll get back within 1 business day.';
+    }
+  });
+
+  /* ============================================================
+     FORM SUBMISSION → Web3Forms → Email + redirect to thank-you
+     ============================================================ */
+  var submitOverlay = document.getElementById('submitOverlay');
+  var submitMsg = document.getElementById('submitMsg');
+  var submitting = false;
+
+  function handleFormSubmit(form, message) {
+    form.addEventListener('submit', function (e) {
+      // If this is the final native submit (after our delay), let it proceed
+      if (submitting) return;
+
+      e.preventDefault();
+
+      // Native HTML5 validation
+      if (!form.checkValidity()) {
+        var invalid = form.querySelector(':invalid');
+        if (invalid) {
+          invalid.focus();
+          invalid.style.borderColor = '#ff7a7a';
+          setTimeout(function () { invalid.style.borderColor = ''; }, 2200);
+        }
+        return;
+      }
+
+      // Save submission summary for the thank-you page
+      try {
+        var fd = new FormData(form);
+        sessionStorage.setItem('si_last_submission', JSON.stringify({
+          type: form.id === 'quoteForm' ? 'quote' : 'quick',
+          name:     fd.get('name') || '',
+          email:    fd.get('email') || '',
+          phone:    fd.get('phone') || '',
+          service:  fd.get('service') || '',
+          summary:
+            'Name: ' + (fd.get('name') || '') + '\n' +
+            'Email: ' + (fd.get('email') || 'Not provided') + '\n' +
+            'Phone: ' + (fd.get('phone') || '') + '\n' +
+            'Company: ' + (fd.get('company') || 'Not provided') + '\n' +
+            'State: ' + (fd.get('state') || 'Not provided') + '\n' +
+            'Service: ' + (fd.get('service') || 'Not provided') + '\n' +
+            'Preferred contact: ' + (fd.get('contact_method') || 'Email') + '\n' +
+            'Heard about us: ' + (fd.get('hear_about') || 'Not provided') + '\n\n' +
+            'Message:\n' + (fd.get('message') || '')
+        }));
+      } catch (err) { /* storage might be disabled — non-fatal */ }
+
+      // Show the animated overlay
+      if (submitMsg) submitMsg.textContent = message;
+      submitOverlay.classList.add('show');
+
+      // Let the animation play, then submit natively to Web3Forms
+      setTimeout(function () {
+        submitting = true;
+        form.submit(); // native submit — Web3Forms will handle redirect
+      }, reduceMotion ? 300 : 1100);
+    });
+  }
+
+  handleFormSubmit(document.getElementById('quoteForm'), 'Preparing your quote request…');
+  handleFormSubmit(document.getElementById('quickForm'), 'Sending your message…');
+
+  /* ---------- AI Chatbot (still scripted — Step 2 will make it live AI) ---------- */
+  var aiFab = document.getElementById('aiFab');
+  var chatPanel = document.getElementById('chatPanel');
+  var chatClose = document.getElementById('chatClose');
+  var chatBody = document.getElementById('chatBody');
+  var chatForm = document.getElementById('chatForm');
+  var chatInput = document.getElementById('chatInput');
+  var chatChips = document.getElementById('chatChips');
+
+  function openChat() {
+    chatPanel.classList.add('open');
+    chatPanel.setAttribute('aria-hidden', 'false');
+    setTimeout(function () { chatInput.focus(); }, 250);
+  }
+  function closeChat() {
+    chatPanel.classList.remove('open');
+    chatPanel.setAttribute('aria-hidden', 'true');
+  }
+
+  aiFab.addEventListener('click', function () {
+    chatPanel.classList.contains('open') ? closeChat() : openChat();
+  });
+  chatClose.addEventListener('click', closeChat);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeChat();
+  });
+
+  function addMsg(text, who) {
+    var div = document.createElement('div');
+    div.className = 'msg ' + who;
+    div.textContent = text;
+    chatBody.appendChild(div);
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+  function typing(callback) {
+    var t = document.createElement('div');
+    t.className = 'msg bot';
+    t.textContent = 'Nidhi is typing…';
+    chatBody.appendChild(t);
+    chatBody.scrollTop = chatBody.scrollHeight;
+    setTimeout(function () { t.remove(); callback(); }, 650);
+  }
+
+  var KB = [
+    { keys: ['price','cost','pricing','budget','how much','quote'], reply: 'Pricing depends on your project scope, the number of pages and which systems you need (website, SEO, AI receptionist). Custom websites typically start as a one-time build plus an optional monthly care plan. Send us your details through the Request a Quote form and we\'ll send a tailored estimate within 1 business day.' },
+    { keys: ['seo','google','rank','local','maps'], reply: 'Our Local SEO Setup optimises your page content, meta tags and location data for regional searches and Google Maps, so homeowners in your target cities find you first. It\'s built into every site we create — no separate plugin required.' },
+    { keys: ['ai','receptionist','bot','answer','call','phone'], reply: 'Our 24/7 AI Receptionist answers inbound calls and chats, handles approved FAQs, captures job details (location, scope, photos) and books appointments into your live calendar. Urgent jobs get escalated straight to your phone by SMS. Want a demo? Head to the Request a Quote form and mention "AI demo".' },
+    { keys: ['time','timeline','how long','duration','weeks'], reply: 'A standard custom website takes roughly 2–4 weeks from kickoff to launch, depending on how quickly content and images are ready. AI receptionist setup and calendar integrations usually add about 1–2 weeks of configuration and testing.' },
+    { keys: ['human','call me','talk','speak','contact','number'], reply: 'Of course! Call or WhatsApp us on 95008 40755, or email info@srinithiiimpex.com. Our team is happy to talk through your project — no obligation.' },
+    { keys: ['mobile','phone friendly','responsive','tablet'], reply: 'Every site we build is mobile-first — designed to load fast and look sharp on smartphones, tablets, laptops and desktops alike. Most homeowners search from their phone, so that experience comes first.' },
+    { keys: ['portfolio','gallery','showcase','work','photos'], reply: 'We build trade-specific portfolio pages with high-resolution galleries, before-and-after sliders and detailed project overviews — perfect for showing off plumbing, painting, roofing or remodeling work and winning higher-value jobs.' },
+    { keys: ['form','lead','conversion','capture'], reply: 'Our high-conversion forms use click-to-call buttons, quick quote fields and reduced friction to capture quality leads directly from your site. Combined with instant SMS auto-replies, homeowners hear back within seconds.' },
+    { keys: ['calendar','booking','schedule','appointment'], reply: 'We connect your site to Google Calendar, Calendly or Outlook so clients can see real-time availability and book themselves — no double-bookings and no back-and-forth emails.' },
+    { keys: ['emergency','urgent','after hours','off hours'], reply: 'Our emergency escalation feature detects urgent keywords or high-priority selections on your forms and instantly routes SMS or phone alerts to on-call team members — so critical jobs never wait.' },
+    { keys: ['hi','hello','hey','good morning','good evening'], reply: 'Hello! 👋 Great to meet you. Are you looking for a new website, better local Google rankings, or a 24/7 AI receptionist for your business?' },
+    { keys: ['thank','thanks','cheers'], reply: 'You\'re very welcome! If you\'d like a tailored quote, just fill in the Request a Quote form — we\'ll respond within 1 business day. 🚀' }
+  ];
+
+  function getReply(text) {
+    var t = text.toLowerCase();
+    for (var i = 0; i < KB.length; i++) {
+      for (var j = 0; j < KB[i].keys.length; j++) {
+        if (t.indexOf(KB[i].keys[j]) !== -1) return KB[i].reply;
+      }
+    }
+    return 'Thanks for your message! I can help with websites, local SEO, portfolios, lead capture, calendar booking and our 24/7 AI receptionist. For anything specific, call or WhatsApp 95008 40755 — or use the Request a Quote form and our team will reply within 1 business day.';
+  }
+  function send(text) {
+    var value = (text || '').trim();
+    if (!value) return;
+    addMsg(value, 'user');
+    typing(function () { addMsg(getReply(value), 'bot'); });
+  }
+  chatForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    send(chatInput.value);
+    chatInput.value = '';
+  });
+  chatChips.addEventListener('click', function (e) {
+    var chip = e.target.closest('.chip');
+    if (chip) send(chip.dataset.q);
+  });
+
+  var cookieBanner = document.getElementById('cookieBanner');
+  var cookieAccept = document.getElementById('cookieAccept');
+  var cookieReject = document.getElementById('cookieReject');
+  if (cookieBanner && !localStorage.getItem('si_cookie_consent')) {
+    setTimeout(function () { cookieBanner.classList.add('show'); }, 1400);
+  }
+  if (cookieAccept) {
+    cookieAccept.addEventListener('click', function () {
+      localStorage.setItem('si_cookie_consent', 'accepted');
+      cookieBanner.classList.remove('show');
+    });
+  }
+  if (cookieReject) {
+    cookieReject.addEventListener('click', function () {
+      localStorage.setItem('si_cookie_consent', 'rejected');
+      cookieBanner.classList.remove('show');
+    });
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var id = a.getAttribute('href');
+      if (id === '#' || id.length < 2) return;
+      var el = document.querySelector(id);
+      if (!el) return;
+      e.preventDefault();
+      var top = el.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    });
+  });
+
+})();
+</script>
 </body>
 </html>
