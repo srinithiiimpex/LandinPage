@@ -1,0 +1,9 @@
+# Srinithii Impex — robots.txt
+# https://www.srinithiiimpex.com/
+
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+
+# Preferred sitemap location
+Sitemap: https://www.srinithiiimpex.com/sitemap.xml
