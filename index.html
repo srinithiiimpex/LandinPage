@@ -346,6 +346,21 @@ details p{color:var(--muted);font-size:14px;max-width:900px;padding:0 44px 20px 
 .chat-send:hover{transform:scale(1.08)}
 .chat-send svg{width:18px;height:18px}
 
+
+
+/* ============================================================
+   AI CHAT TYPING DOTS (three bouncing dots)
+   ============================================================ */
+.typing-dots{display:inline-flex;gap:3px;margin-left:4px;vertical-align:middle}
+.typing-dots i{width:4px;height:4px;border-radius:50%;background:#9fd4ff;animation:typingBounce 1.2s ease-in-out infinite}
+.typing-dots i:nth-child(2){animation-delay:.15s}
+.typing-dots i:nth-child(3){animation-delay:.3s}
+@keyframes typingBounce{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-4px);opacity:1}}
+
+/* COOKIE BANNER */
+.cookie-banner{
+  ...
+     
 .cookie-banner{position:fixed;bottom:20px;left:20px;right:20px;z-index:100;max-width:640px;margin:0 auto;padding:18px 20px;border-radius:14px;background:rgba(11,28,49,.97);border:1px solid rgba(79,209,255,.35);box-shadow:0 20px 50px rgba(0,0,0,.5);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:none;align-items:center;gap:16px;flex-wrap:wrap;font-size:13.5px;color:#cfe1f5}
 .cookie-banner.show{display:flex;animation:cookieIn .45s cubic-bezier(.22,.7,.3,1)}
 @keyframes cookieIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
@@ -1233,88 +1248,108 @@ details p{color:var(--muted);font-size:14px;max-width:900px;padding:0 44px 20px 
   handleFormSubmit(document.getElementById('quoteForm'), 'Preparing your quote request…');
   handleFormSubmit(document.getElementById('quickForm'), 'Sending your message…');
 
-  /* ---------- AI Chatbot (still scripted — Step 2 will make it live AI) ---------- */
-  var aiFab = document.getElementById('aiFab');
-  var chatPanel = document.getElementById('chatPanel');
-  var chatClose = document.getElementById('chatClose');
-  var chatBody = document.getElementById('chatBody');
-  var chatForm = document.getElementById('chatForm');
-  var chatInput = document.getElementById('chatInput');
-  var chatChips = document.getElementById('chatChips');
+/* ============================================================
+   AI CHATBOT — calls Cloudflare Worker → OpenAI
+   ============================================================ */
+var aiFab = document.getElementById('aiFab');
+var chatPanel = document.getElementById('chatPanel');
+var chatClose = document.getElementById('chatClose');
+var chatBody = document.getElementById('chatBody');
+var chatForm = document.getElementById('chatForm');
+var chatInput = document.getElementById('chatInput');
+var chatChips = document.getElementById('chatChips');
 
-  function openChat() {
-    chatPanel.classList.add('open');
-    chatPanel.setAttribute('aria-hidden', 'false');
-    setTimeout(function () { chatInput.focus(); }, 250);
-  }
-  function closeChat() {
-    chatPanel.classList.remove('open');
-    chatPanel.setAttribute('aria-hidden', 'true');
-  }
+// ⚠️ Note the "iai" in the middle — this is the correct worker URL
+var WORKER_URL = 'https://nidhiaiassistant.srinithiiimpex.workers.dev';
 
-  aiFab.addEventListener('click', function () {
-    chatPanel.classList.contains('open') ? closeChat() : openChat();
-  });
-  chatClose.addEventListener('click', closeChat);
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeChat();
-  });
+var chatHistory = [];
+var chatBusy = false;
 
-  function addMsg(text, who) {
-    var div = document.createElement('div');
-    div.className = 'msg ' + who;
-    div.textContent = text;
-    chatBody.appendChild(div);
-    chatBody.scrollTop = chatBody.scrollHeight;
-  }
-  function typing(callback) {
-    var t = document.createElement('div');
-    t.className = 'msg bot';
-    t.textContent = 'Nidhi is typing…';
-    chatBody.appendChild(t);
-    chatBody.scrollTop = chatBody.scrollHeight;
-    setTimeout(function () { t.remove(); callback(); }, 650);
-  }
+function openChat() {
+  chatPanel.classList.add('open');
+  chatPanel.setAttribute('aria-hidden', 'false');
+  setTimeout(function () { chatInput.focus(); }, 250);
+}
+function closeChat() {
+  chatPanel.classList.remove('open');
+  chatPanel.setAttribute('aria-hidden', 'true');
+}
 
-  var KB = [
-    { keys: ['price','cost','pricing','budget','how much','quote'], reply: 'Pricing depends on your project scope, the number of pages and which systems you need (website, SEO, AI receptionist). Custom websites typically start as a one-time build plus an optional monthly care plan. Send us your details through the Request a Quote form and we\'ll send a tailored estimate within 1 business day.' },
-    { keys: ['seo','google','rank','local','maps'], reply: 'Our Local SEO Setup optimises your page content, meta tags and location data for regional searches and Google Maps, so homeowners in your target cities find you first. It\'s built into every site we create — no separate plugin required.' },
-    { keys: ['ai','receptionist','bot','answer','call','phone'], reply: 'Our 24/7 AI Receptionist answers inbound calls and chats, handles approved FAQs, captures job details (location, scope, photos) and books appointments into your live calendar. Urgent jobs get escalated straight to your phone by SMS. Want a demo? Head to the Request a Quote form and mention "AI demo".' },
-    { keys: ['time','timeline','how long','duration','weeks'], reply: 'A standard custom website takes roughly 2–4 weeks from kickoff to launch, depending on how quickly content and images are ready. AI receptionist setup and calendar integrations usually add about 1–2 weeks of configuration and testing.' },
-    { keys: ['human','call me','talk','speak','contact','number'], reply: 'Of course! Call or WhatsApp us on 95008 40755, or email info@srinithiiimpex.com. Our team is happy to talk through your project — no obligation.' },
-    { keys: ['mobile','phone friendly','responsive','tablet'], reply: 'Every site we build is mobile-first — designed to load fast and look sharp on smartphones, tablets, laptops and desktops alike. Most homeowners search from their phone, so that experience comes first.' },
-    { keys: ['portfolio','gallery','showcase','work','photos'], reply: 'We build trade-specific portfolio pages with high-resolution galleries, before-and-after sliders and detailed project overviews — perfect for showing off plumbing, painting, roofing or remodeling work and winning higher-value jobs.' },
-    { keys: ['form','lead','conversion','capture'], reply: 'Our high-conversion forms use click-to-call buttons, quick quote fields and reduced friction to capture quality leads directly from your site. Combined with instant SMS auto-replies, homeowners hear back within seconds.' },
-    { keys: ['calendar','booking','schedule','appointment'], reply: 'We connect your site to Google Calendar, Calendly or Outlook so clients can see real-time availability and book themselves — no double-bookings and no back-and-forth emails.' },
-    { keys: ['emergency','urgent','after hours','off hours'], reply: 'Our emergency escalation feature detects urgent keywords or high-priority selections on your forms and instantly routes SMS or phone alerts to on-call team members — so critical jobs never wait.' },
-    { keys: ['hi','hello','hey','good morning','good evening'], reply: 'Hello! 👋 Great to meet you. Are you looking for a new website, better local Google rankings, or a 24/7 AI receptionist for your business?' },
-    { keys: ['thank','thanks','cheers'], reply: 'You\'re very welcome! If you\'d like a tailored quote, just fill in the Request a Quote form — we\'ll respond within 1 business day. 🚀' }
-  ];
+aiFab.addEventListener('click', function () {
+  chatPanel.classList.contains('open') ? closeChat() : openChat();
+});
+chatClose.addEventListener('click', closeChat);
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') closeChat();
+});
 
-  function getReply(text) {
-    var t = text.toLowerCase();
-    for (var i = 0; i < KB.length; i++) {
-      for (var j = 0; j < KB[i].keys.length; j++) {
-        if (t.indexOf(KB[i].keys[j]) !== -1) return KB[i].reply;
-      }
-    }
-    return 'Thanks for your message! I can help with websites, local SEO, portfolios, lead capture, calendar booking and our 24/7 AI receptionist. For anything specific, call or WhatsApp 95008 40755 — or use the Request a Quote form and our team will reply within 1 business day.';
+function addMsg(text, who) {
+  var div = document.createElement('div');
+  div.className = 'msg ' + who;
+  div.textContent = text;
+  chatBody.appendChild(div);
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+function showTyping() {
+  var t = document.createElement('div');
+  t.className = 'msg bot';
+  t.id = 'typingIndicator';
+  t.innerHTML = 'Nidhi is typing<span class="typing-dots"><i></i><i></i><i></i></span>';
+  chatBody.appendChild(t);
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+function hideTyping() {
+  var t = document.getElementById('typingIndicator');
+  if (t) t.remove();
+}
+
+async function send(text) {
+  var value = (text || '').trim();
+  if (!value || chatBusy) return;
+
+  chatBusy = true;
+  addMsg(value, 'user');
+  chatHistory.push({ role: 'user', text: value });
+  showTyping();
+
+  try {
+    var res = await fetch(WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: value,
+        history: chatHistory.slice(-10, -1),
+      }),
+    });
+
+    var data = await res.json();
+    hideTyping();
+
+    var reply = data.reply || 'Sorry, I didn\'t catch that. Could you try again?';
+    addMsg(reply, 'bot');
+    chatHistory.push({ role: 'model', text: reply });
+  } catch (err) {
+    hideTyping();
+    var fallback = 'Sorry, I\'m having trouble connecting. Please call or WhatsApp us on 95008 40755 — we reply fast.';
+    addMsg(fallback, 'bot');
+    chatHistory.push({ role: 'model', text: fallback });
+  } finally {
+    chatBusy = false;
   }
-  function send(text) {
-    var value = (text || '').trim();
-    if (!value) return;
-    addMsg(value, 'user');
-    typing(function () { addMsg(getReply(value), 'bot'); });
-  }
-  chatForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-    send(chatInput.value);
-    chatInput.value = '';
-  });
-  chatChips.addEventListener('click', function (e) {
-    var chip = e.target.closest('.chip');
-    if (chip) send(chip.dataset.q);
-  });
+}
+
+chatForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  var v = chatInput.value;
+  chatInput.value = '';
+  send(v);
+});
+
+chatChips.addEventListener('click', function (e) {
+  var chip = e.target.closest('.chip');
+  if (chip) send(chip.dataset.q);
+});
 
   var cookieBanner = document.getElementById('cookieBanner');
   var cookieAccept = document.getElementById('cookieAccept');
